@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <met</div>a charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystalies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #007BFF;
+            padding: 0px 20px;
+        }
+        .top-bar .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .top-bar .logo img {
+            padding-left: 30px;
+            width: auto; 
+            height: 80px; 
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            width: 100%;
+        }
+        .header .search-bar {
+            flex-grow: 1;
+            margin: 0 300px;
+            max-width: 900px; 
+            position: relative;
+        }
+        .header .search-bar input {
+            width: 100%;
+            padding: 10px 50px 10px 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .header .search-bar img {
+            position: absolute;
+            right: -50px;
+            top: 50%;
+            transform: translateY(-40%);
+            width: 20px; 
+            height: auto;
+        }
+        .header .account-options {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .header .account-options a {
+            color: white; 
+            font-weight: normal;
+            text-decoration: none; 
+        }
+        .header .account-options img {
+            width: 30px; 
+            height: auto;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f8f9fa;
+            padding: 10px 0;
+        }
+        .menu a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+        .banner {
+            position: relative;
+            width: 100%; 
+            margin: 0; 
+            overflow: hidden;
+        }
+        .banner img {
+            width: 100%;
+            display: none;
+        }
+        .banner img.active {
+            display: block;
+        }
+        .footer {
+            background-color: #007BFF;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .footer .left, .footer .center, .footer .right {
+            flex: 1;
+        }
+        .footer .left img, .footer .right img {
+            width: 50px;
+            height: auto;
+        }
+        .footer .center {
+            text-align: center;
+        }
+        .footer .center a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin: 5px 0;
+        }
+        .footer .right {
+            text-align: right;
+        }
+        .footer .right img {
+            width: 140px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="logo">
+            <img src="../IMAGES/logo.png" alt="Logo">
+        </div>
+        <header class="header">
+            <div class="search-bar">
+                <input type="text" placeholder="Bạn cần gì...">
+                <img src="../IMAGES/timkiem.png" alt="Tìm kiếm">
+            </div>
+            <div class="account-options">
+                <a href="login.html">Đăng nhập</a>
+                <a href="register.html">Đăng ký</a>
+                <a href="#"><img src="../IMAGES/giohang.png" alt="Giỏ hàng"></a>
+                <a href="#"><img src="../IMAGES/nha.png" alt="Thông tin tài khoản"></a>
+            </div>
+        </header>
+    </div>
+    <nav class="menu">
+        <a href="#">Loại đồng hồ</a>
+        <a href="#">Chọn Thương hiệu</a>
+        <a href="#">Chọn theo giá</a>
+        <a href="#">Sản phẩm nổi bật</a>
+    </nav>
+    <section class="banner">
+        <img src="../IMAGES/banner1.jpg" alt="Banner 1" class="active">
+        <img src="../IMAGES/banner2.jpg" alt="Banner 2">
+        <img src="../IMAGES/banner3.jpg" alt="Banner 3">
+    </section>
+    <footer class="footer">
+        <div class="left">
+            <img src="../IMAGES/logo_contact.jpg" alt="Logo">
+            <p>Bản quyền thuộc về Ngọc My, Quốc Sáng</p>
+        </div>
+        <div class="center">
+            <div class="left-center"></div>
+                <a href="#">Your Account</a>
+                <a href="#">View Order</a>
+            </div>
+            <div class="right-center">
+                <p>Contact Info</p>
+                <p>Nguyễn Võ Ngọc My</p>
+                <p>Mail: mykhung123@gmail.com</p> 
+                <p>Trần Quốc Sáng</p>
+                <p>Mail: sangtranquocgl@gmail.com</p> 
+            </div>
+        </div>
+        <div class="right">
+            <img src="../IMAGES/logo.png" alt="Logo">
+
+        </div>
+    </footer>
+    <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.banner img');
+        setInterval(() => {
+            images[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % images.length;
+            images[currentIndex].classList.add('active');
+        }, 3000);
+    </script>
+</body>
+</html>
