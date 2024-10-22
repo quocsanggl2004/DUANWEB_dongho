@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <met</div>a charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crystalies</title>
     <style>
@@ -82,11 +82,14 @@
         .banner {
             position: relative;
             width: 100%; 
+            height: 400px; 
             margin: 0; 
             overflow: hidden;
         }
         .banner img {
             width: 100%;
+            height: 100%; 
+            object-fit: cover; 
             display: none;
         }
         .banner img.active {
@@ -98,17 +101,21 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px;
+            height: 145px;
         }
         .footer .left, .footer .center, .footer .right {
             flex: 1;
         }
         .footer .left img, .footer .right img {
+            padding-left: 25px;
             width: 50px;
             height: auto;
+            background-color: #007BFF; 
         }
         .footer .center {
-            text-align: center;
+            padding-bottom: 30px;
+            padding-right: 60px;
+            text-align: left;
         }
         .footer .center a {
             color: white;
@@ -116,11 +123,27 @@
             display: block;
             margin: 5px 0;
         }
+        .right-center {
+            text-align: left;
+        }
+        .right-center p {
+            font-size: 14px; 
+            margin: 3px 0;
+        }
         .footer .right {
             text-align: right;
         }
         .footer .right img {
-            width: 140px;
+            padding-right: 40px;
+            width: 165px;
+        }
+        .copyright {
+            text-align: center;
+            border-top: 1px solid #ccc;
+            background-color: #007BFF;
+            color: white;
+            height: 25px;
+            font-size: 12px;
         }
     </style>
 </head>
@@ -155,27 +178,29 @@
     </section>
     <footer class="footer">
         <div class="left">
-            <img src="../IMAGES/logo_contact.jpg" alt="Logo">
-            <p>Bản quyền thuộc về Ngọc My, Quốc Sáng</p>
+            <a href="#"><img src="../IMAGES/fb.png" alt="Facebook"></a>
+            <a href="#"><img src="../IMAGES/ig.png" alt="Instagram"></a>
+            <a href="#"><img src="../IMAGES/tt.png" alt="Twitter"></a>
         </div>
         <div class="center">
-            <div class="left-center"></div>
-                <a href="#">Your Account</a>
-                <a href="#">View Order</a>
-            </div>
-            <div class="right-center">
-                <p>Contact Info</p>
-                <p>Nguyễn Võ Ngọc My</p>
-                <p>Mail: mykhung123@gmail.com</p> 
-                <p>Trần Quốc Sáng</p>
-                <p>Mail: sangtranquocgl@gmail.com</p> 
-            </div>
+            <h3>Quick Link</h3>
+            <a href="#">Your Account</a>
+            <a href="#">View Order</a>
+        </div>
+        <div class="right-center">
+            <h3>Contact Info</h3>
+            <p>Nguyễn Võ Ngọc My</p>
+            <p>Mail: nguyenvongocmy240@gmail.com</p>
+            <p>Trần Quốc Sáng</p>
+            <p>Mail: sangtranquocgl@gmail.com</p>
         </div>
         <div class="right">
             <img src="../IMAGES/logo.png" alt="Logo">
-
         </div>
     </footer>
+    <div class="copyright">
+        <p>© 2024 Crystalies. All Rights Reserved | Design by My & Sang</p>
+    </div>
     <script>
         let currentIndex = 0;
         const images = document.querySelectorAll('.banner img');
