@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+header {
+    background-color: #3a77ca;
+    position: relative;
+}
+
+#logo {
+    width: 50%;
+    margin-bottom: -20px;
+    margin-top: -30px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #989ea5;
+}
+
+.form-control {
+    margin-left: 80px;
+    width: 600px;
+    margin-right: 5px;
+}
+
+.flex-grow-1 {
+    margin-top: 10px;
+}
+
+.auth-links a {
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.auth-links a:hover {
+    color: #989ea5;
+}
+
+/* menu */
+.nav-link {
+    margin-right: 100px;
+    margin-left: 100px;
+    color: #351ee8;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.nav-link:hover {
+    color: #989ea5;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px;
+}
+
+.navbar-nav .dropdown-menu {
+    margin-left: 100px;
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: none;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    color: #000;
+}
+
+.dropdown-item:hover {
+    background-color: #7ab5ef;
+}
+
+/* phần nút next ở banner */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #7ab5ef;
+}
+
+/* sản phẩm nổi bật */
+.col-md-3:hover {
+    transform: scale(1.1);
+}
+
+.featured-products {
+    background-color: #d0e2f5;
+    padding: 30px 0;
+}
+
+.featured-products h2 {
+    font-size: 30px;
+    color: #1a3d7c;
+    margin-bottom: 30px;
+}
+
+.product-card {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    color: #1a3d7c;
+    margin-bottom: 10px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #777;
+    font-size: 1rem;
+}
+
+.new-price {
+    color: red;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* gợi ý hôm nay */
+.featured-products-1 {
+    background-color: #fff;
+}
+
+.featured-products-1 h2 {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.container h2 {
+    font-size: 30px;
+    color: #1a3d7c;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Đặt nền cho footer */
+.footer {
+    background-color: #3a77ca;
+    color: white;
+    padding: 20px 0;
+}
+
+/* Phần bố cục chính của footer */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #264c89;
+    padding-bottom: 0px;
+}
+
+/* Cột trong footer */
+.footer-column {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-column h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-column a:hover {
+    color: #989ea5;
+    /* Màu vàng khi rê chuột */
+}
+
+/* Cột biểu tượng mạng xã hội */
+.social-column {
+    display: flex;
+}
+
+.social-column img:hover {
+    transform: scale(1.1);
+    /* Hiệu ứng phóng to khi rê chuột */
+}
+
+.logo-column h5 {
+    font-size: 22px;
+    margin: 5px 0 0 0;
+}
+
+#fb,
+#tt,
+#ig {
+    width: 50%;
+    margin-top: -40px;
+}
+
+#logo_end {
+    width: 50%;
+    margin-left: 120px;
+    margin-top: -60px;
+}
+
+/* Phần bản quyền */
+.footer-copyright {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.footer-copyright p {
+    font-size: 16px;
+    color: black;
+    margin-bottom: -10px;
+}
+
+
+/* Modal đăng ký */
+/* Định dạng chung cho modal */
+.modal-content {
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.modal-header {
+    background-color: #007bff;
+    color: #fff;
+    border-bottom: none;
+    padding: 10px 23px;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.btn-close {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.modal-body {
+    padding: 20px 24px;
+}
+
+/* Định dạng cho các trường form */
+.form-label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: inline-block;
+    color: #333;
+}
+
+.form-control {
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+    width: 450px;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Khoảng cách giữa các trường */
+.mb-3 {
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+/* Nút Đăng ký */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.btn-primary:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
